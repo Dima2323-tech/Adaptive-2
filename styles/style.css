@@ -258,10 +258,9 @@ nav ul {
 .New_Releases_Scroller{
     display: flex;
     position: relative;
-    left: 80px;
-    height: 300px; /* высота нашего блока */
-    width: 500px; /* ширина нашего блока */
-    background: #fff; /* цвет фона, белый */
+    height: 300px;
+    width: 340px;
+    background: #fff;
 
 
     overflow-y: auto;
