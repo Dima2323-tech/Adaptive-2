@@ -1,0 +1,258 @@
+:root{
+    --main-color: black;
+    --secondary-color: white;
+    --bgmain-color: white;
+    --bgbutton-color: black;
+    --bgsecondary-color: black;
+    --titlefont-font-family: 'Montserrat';
+    --textfont-font-family:'Poppins';
+    --main-padding: 0 1.25rem;
+}
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.Headre_Content{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--main-padding);
+    margin: 50px 0 ;
+}
+#burger, [for=burger]{
+    display: none;
+}
+.Header_Navigation{
+   display: flex;
+}
+[for=burger] {
+    display: flex;
+}
+[for=burger]::before{
+    content: '☰';
+}
+nav{
+    display: none;
+    top: 0;
+    background: rgba(216, 243, 253, 0.692);
+    width: 100%;
+    user-select: none;
+    margin-bottom:  100px;
+}
+nav ul {
+    position: fixed;
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+.Header_Nav_Button{
+    text-decoration: none;
+    color: var(--main-color) ;
+    font-family: var(--textfont-font-family);
+}
+#burger:checked + label + nav{
+    display: inline-block;
+    animation: show .5s ease;
+}
+#burger:checked +[for=burger]::before{
+    content: '⮾';
+}
+.Header_Logo{
+}
+.Header_Logo_Text{
+    background-color: var(--bgbutton-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: var(--titlefont-font-family);
+    font-weight: 800 ;
+    font-size: 1rem;
+    padding: 10px 50px;
+    align-items: center;
+}
+.fa-magnifying-glass{
+ padding-right: 20px;
+}
+.fa-bag-shopping , .fa-magnifying-glass{
+    color: var(--main-color);
+}
+.Banner_Container{
+    margin-bottom: 3.125rem;
+}
+.Banner_Content{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 100px;
+}
+.Banner_Photos{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.Banner_Vans_Big{
+    display: flex;
+    align-items: flex-start;
+    transform: matrix(1, 0.3, 0.02, 0.99, 0, 0);
+
+
+}
+.Banner_Vans_Small{
+    display: flex;
+    vertical-align: middle;
+    transform: matrix(1, -0.3, 0.02, 0.99, 0, 0);
+}
+.Banner_Text_Block{
+    margin-top: 100px;
+    text-align: center;
+}
+.Banner_Text_Block_Tittle{
+    font-family: var(--titlefont-font-family);
+    font-size: 3rem;
+    font-weight: 800;
+    width: 30rem;
+}
+.Banner_Text_Block_Text{
+    font-family: var(--textfont-font-family);
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding-bottom: 2.813rem;
+    display: flex;
+    flex-direction: column;
+}
+.Banner_Button{
+    font-family: var(--titlefont-font-family);
+    background-color: var(--bgbutton-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 0.938rem;
+    padding: 0.625rem 3.125rem ;
+    transition: 0.5s;
+}
+.Banner_Button:hover{
+    color:var(--main-color);
+    background-color: var(--secondary-color);
+    border-radius: 1px;
+    transition: 0.5s;
+}
+.Preview_Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Preview_Women{
+    background-image: url("../img/white_boots_adaptive.png");
+    background-repeat: no-repeat;
+    text-align: left;
+    width:21.375rem;
+    height:21.375rem;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Preview_Women_Tittle{
+    color: var(--secondary-color);
+    font-family: var(--titlefont-font-family);
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-left: 20px;
+}
+.Preview_Women_Link{
+    margin-top: 18.75rem;
+    padding-right: 0.625rem;
+    text-decoration: none;
+    font-family: var(--textfont-font-family);
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+.Preview_Men{
+    background-image: url("../img/blue_newbalanc_apaptive.png");
+    background-repeat: no-repeat;
+    text-align: left;
+    width:21.375rem;
+    height:21.375rem;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.563rem ;
+}
+.Preview_Men_Tittle{
+    color: var(--secondary-color);
+    font-family: var(--titlefont-font-family);
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-left: 20px;
+}
+.Preview_Men_Link{
+    position: relative;
+    margin-top: 300px;
+    left: -67%;
+    text-decoration: none;
+    font-family: var(--textfont-font-family);
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+.New_Releases_Container{
+    margin-top: 2.813rem;
+}
+.New_Releases_Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.New_Releases_Title{
+    position: relative;
+    right: 60px;
+}
+.New_Releases_Title>span{
+    font-family: var(--titlefont-font-family);
+    font-size: 1.875rem;
+    font-weight: 800;
+}
+.Scroll{
+
+}
+.New_Releases_Scroller{
+    display: flex;
+    position: relative;
+    left: 80px;
+    height: 300px; /* высота нашего блока */
+    width: 500px; /* ширина нашего блока */
+    background: #fff; /* цвет фона, белый */
+
+
+    overflow-y: auto;
+    direction: ltr;
+    color: black;
+    margin-bottom: 30px;
+}
+.New_Releases_Scroller::-webkit-scrollbar {
+    display: block;
+    width: 5em;
+    overflow: auto;
+    height: 7px;
+    background-color: #aaa;
+}
+.New_Releases_Scroller::-webkit-scrollbar-thumb {
+    background: #000;
+}
+.New_Releases_Scroller_Product_Container{
+    display: flex;
+    flex-direction: column;
+}
+.Product_Name{
+    font-family: var(--textfont-font-family);
+    font-size: 1.125rem ;
+    font-weight: 600;
+}
+.Product_Price{
+    font-family: var(--textfont-font-family);
+    font-size: 1.125rem;
+    font-weight: 400;
+
+}
+.New_Releases_Scroller_Product_Photo{
+    padding-right: 10px;
+    width: 250px;
+}
