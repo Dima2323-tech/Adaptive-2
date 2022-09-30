@@ -8,144 +8,94 @@
     --textfont-font-family:'Poppins';
     --main-padding: 0 1.25rem;
 }
-@media screen and (max-width: 460px){
+
+@media screen and (min-width: 460px) {
     body{
         max-width: 100%;
-        min-width: 320px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin:0 auto;
-
+        height: 100%;
+        margin: 0 auto;
     }
-    header{
-        max-width: 430px;
-        min-width: 320px;
-        padding: 0;
-    }
-    .Headre_Content{
+    header {
         display: flex;
         justify-content: space-between;
-        margin: 50px 0 ;
-        padding:  0 5% ;
-        min-width: 320px;
-        max-width: 100%;
-
+        width: 1500px;
+        margin: 0 auto;
+        padding: 2.5rem 1.625rem ;
 
     }
-    #burger, [for=burger]{
-        display: none;
+
+    .Headre_Content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+
+    }
+    .Header_Navigation>input{
+        visibility: hidden;
     }
     .Header_Navigation{
         display: flex;
-    }
-    [for=burger] {
-        display: flex;
-    }
-    [for=burger]::before{
-        content: '☰';
-    }
-    .Header_Nav{
-        display: none;
-        top: 0;
-        background: rgba(216, 243, 253, 0.692);
-        width: 100%;
-        user-select: none;
-        margin-bottom:  100px;
+        align-items: center;
     }
     .Header_Nav>ul {
-        position: absolute;
-        margin-top: 30px;
+        display: flex;
         padding: 0;
         list-style-type: none;
-        left: 50px;
-        text-align: left;
     }
     .Header_Nav_Button{
         text-decoration: none;
-        color: var(--main-color) ;
+        color: var(--bgsecondary-color);
+        font-weight: 500;
         font-family: var(--textfont-font-family);
+        font-size: 1.5rem;
     }
-    #burger:checked + label + nav{
-        display: inline-block;
-        animation: show .5s ease;
-    }
-    #burger:checked +[for=burger]::before{
-        content: '⮾';
+    .Header_Nav_Button:not(:first-child){
+        padding-left: 45px;
     }
     .Header_Logo{
-        padding-left: 20%;
-        text-align: center;
+        margin-left: 3.125rem;
     }
     .Header_Logo_Text{
-        background-color: var(--bgbutton-color);
-        color: var(--secondary-color);
+        text-align: center;
         text-decoration: none;
+        color: var(--secondary-color);
+        background-color: var(--bgsecondary-color);
+        padding: 0.625rem 3.125rem ;
         font-family: var(--titlefont-font-family);
-        font-weight: 800 ;
+        font-weight: 800;
         font-size: 1rem;
-        padding: 10px 50px;
-        align-items: center;
     }
     .fa-magnifying-glass{
-        padding-right: 20px;
+
     }
     .fa-bag-shopping , .fa-magnifying-glass{
         color: var(--main-color);
-    }
-    main{
-        max-width: 100%;
+        padding-left: 3.125rem;
     }
     .Banner_Container{
-        margin-bottom: 3.125rem;
-        width: 100%;
-        min-width: 100%;
+        width: 1500px;
+        margin: 3.125rem auto;
         padding: 5px;
     }
     .Banner_Content{
         display: flex;
-        flex-direction: column-reverse;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
-        min-width: 100%;
         margin: 20px;
     }
     .Banner_Photos{
-        width: 100%;
-        min-width: 320px;
-        height: 300px;
-        overflow: hidden;
         display: flex;
-        justify-content: space-between;
+        margin-right: 3.438%;
     }
-    .Banner_Vans_Big{
-        position: absolute;
-        left: -4%;
-        text-align: left;
-        top:20%;
-        transform:rotate(-1deg);
-    }
+
     .Banner_Vans_Small{
         position: relative;
-        right: -53%;
-        transform:rotate(-25deg);
-        top:90px;
-        text-align: right;
-    }
-    .Banner_Vans_Big>img{
-        width: 235px;
-        height: 200px;
-        padding-right: 5px;
-    }
-    .Banner_Vans_Small>img{
-        width: 247px;
-        height: 170px;
-        padding-left: 5px;
+        top:-50px;
     }
     .Banner_Text_Block{
-
-        text-align: center;
+        text-align: left;
     }
     .Banner_Text_Block_Tittle{
         font-family: var(--titlefont-font-family);
@@ -177,38 +127,35 @@
         transition: 0.5s;
     }
     .Preview_Container{
-        max-width: 430px;
-        min-width: 320px;
-        padding: 0;
+        margin: 0 1.5rem;
     }
     .Preview_Content{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-width: 320px;
-        max-width: 430px;
-        padding: 0;
+        justify-content: center;
+
     }
     .Preview_Women{
-        background-image: url("../img/white_boots_adaptive.png");
+        background-image: url("../img/white_boots.png");
         background-repeat: no-repeat;
         text-align: left;
-        width:21.375rem;
-        height:21.375rem;
+        width:45.25rem;
+        height:28.438rem;
         background-size: 100%;
         display: flex;
         justify-content: space-between;
+        margin-right: 1rem;
     }
     .Preview_Women_Tittle{
         color: var(--secondary-color);
         font-family: var(--titlefont-font-family);
         font-size: 2.5rem;
         font-weight: 800;
-        padding-left: 20px;
+        padding-left: 1.25rem;
+        padding-top: 1.25rem;
     }
     .Preview_Women_Link{
-        margin-top: 18.75rem;
-        padding-right: 0.625rem;
+        margin-top: 24.5rem;
+        padding-right: 2.8rem;
         text-decoration: none;
         font-family: var(--textfont-font-family);
         color: var(--main-color);
@@ -216,27 +163,28 @@
         font-size: 1.125rem;
     }
     .Preview_Men{
-        background-image: url("../img/blue_newbalanc_apaptive.png");
+        background-image: url("../img/black_under.png");
         background-repeat: no-repeat;
         text-align: left;
-        width:21.375rem;
-        height:21.375rem;
+        width:45.25rem;
+        height:28.438rem;
         background-size: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 1.563rem ;
+
     }
     .Preview_Men_Tittle{
         color: var(--secondary-color);
         font-family: var(--titlefont-font-family);
         font-size: 2.5rem;
         font-weight: 800;
-        padding-left: 20px;
+        padding-left: 1.25rem;
+        padding-top: 1.25rem;
     }
     .Preview_Men_Link{
         position: relative;
-        margin-top: 300px;
-        left: -67%;
+        margin-top: 24.5rem;
+        right: 590px;
         text-decoration: none;
         font-family: var(--textfont-font-family);
         color: var(--secondary-color);
@@ -244,27 +192,22 @@
         font-size: 1.125rem;
     }
     .Scroller_Container{
-        margin-top: 2.813rem;
-        max-width: 430px;
-        min-width: 320px;
-        padding: 0;
+        margin: 3.125rem auto;
     }
     .Scroller_Content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 320px;
-        max-width: 430px;
         padding: 0;
     }
     .Scroller_Title{
         position: relative;
-        right: 60px;
+        right: 622px;
     }
     .Scroller_Title_Top{
         position: relative;
-        right: 93px;
+        right: 655px;
     }
     .Scroller_Title , .Scroller_Title_Top>span{
         font-family: var(--titlefont-font-family);
@@ -275,10 +218,8 @@
         display: flex;
         position: relative;
         height: 300px;
-        width: 340px;
+        width: 1468px;
         background: #fff;
-
-
         overflow-y: auto;
         direction: ltr;
         color: black;
@@ -297,6 +238,7 @@
     .Scroller_Product_Content{
         display: flex;
         flex-direction: column;
+        max-width: 100%;
     }
     .Product_Name{
         font-family: var(--textfont-font-family);
@@ -314,16 +256,14 @@
         width: 250px;
     }
     .Mailing_Container{
-        max-width: 430px;
-        min-width: 320px;
+        margin: 9.688rem;
         padding: 0;
     }
     .Mailing_Content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-width: 320px;
-        max-width: 430px;
+
         text-align: center;
         padding: 3.75rem 0;
     }
@@ -363,36 +303,39 @@
         background-color: var(--bgsecondary-color);
     }
     .Footer_Content{
-        min-width: 20rem;
-        max-width: 26.875rem;
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         color: white;
-        padding-left:1.563rem ;
+        padding: 0 1.563rem ;
 
+    }
+    .Footer_Navigation{
+        display: flex;
+        width: 1500px;
     }
     .Footer_Nav>ul{
         padding: 0;
         list-style-type: none;
     }
     .Nav_Container_Top{
-        width: 240px;
         text-align: left;
         display: flex;
         justify-content: space-between;
         margin-bottom: 1.875rem;
+        width: 40%;
     }
     .Nav_Container_Bottom{
-        width: 280px;
+        width: 40%;
         text-align: left;
         display: flex;
         justify-content: space-between;
     }
     .Footer_Navigation{
-        padding:2.938rem 0 0.938rem ;
-        text-align: center;
-    }
-    .Footer_Nav{
-        text-align: left;
+        padding: 4rem 0 ;
+        display: flex;
+        justify-content: space-between;
+        width: 53%;
     }
     .Footer_Nav_Content>span{
         font-family: var(--textfont-font-family);

@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="styles/style.css" >
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style_adaptive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
             <div class="Header_Navigation">
                 <input type="checkbox" id="burger">
                 <label for="burger"></label>
-                <nav>
+                <nav class="Header_Nav">
                     <ul>
                         <a class="Header_Nav_Button" href="#"><li>Women</li></a>
                         <a class="Header_Nav_Button" href="#"><li>Men</li></a>
@@ -26,9 +27,9 @@
                         <a class="Header_Nav_Button" href="#"><li>Sales</li></a>
                     </ul>
                 </nav>
-            </div>
-            <div class="Header_Logo">
-                <a class="Header_Logo_Text" href="#"><span>Shoppy</span></a>
+                <div class="Header_Logo">
+                    <a class="Header_Logo_Text" href="#"><span>Shoppy</span></a>
+                </div>
             </div>
             <div class="Header_Search">
                 <a href="#"><i class="fa-lg fa-sharp fa-solid fa-magnifying-glass"></i></a>
@@ -36,145 +37,331 @@
             </div>
         </div>
     </header>
-    <div class="Banner_Container">
-        <div class="Banner_Content ">
-            <div class="Banner_Text_Block">
-                <div class="Banner_Text_Block_Tittle">
-                    <span>Build for <p>flight</p></span>
-                </div>
-                <div class="Banner_Text_Block_Text">
-                    <span>Introducing product name.<p>Our lighest shoe ever.</p></span>
-                </div>
-                <div class="Banner_Text_Block_Button">
-                    <button class="Banner_Button">
-                        SHOP NOW
-                    </button>
-                </div>
-            </div>
-            <!--<div class="Banner_Photos">
-                <div class="Banner_Vans_Big">
-                    <img src="img/vans_big.png" alt="">
-                </div>
-                <div class="Banner_Vans_Small">
-                    <img src="img/vans_small.png" alt="">
-                </div>
-            </div>-->
-        </div>
-    </div>
-    <div class="Preview_Container">
-        <div class="Preview_Content">
-            <div class="Preview_Women">
-                <span class="Preview_Women_Tittle">Women</span>
-                <a class="Preview_Women_Link" href="#"><span>Shop Now</span></a>
-            </div>
-            <div class="Preview_Men">
-                <span class="Preview_Men_Tittle">Men</span>
-                <a class="Preview_Men_Link" href="#"><span>Shop Now</span></a>
-            </div>
-        </div>
-    </div>
-    <div class="New_Releases_Container">
-        <div class="New_Releases_Content">
-            <div class="New_Releases_Title">
-                <span>New Releases</span>
-            </div>
-            <div class="Scroll">
-                <div class="New_Releases_Scroller">
-                    <div class="New_Releases_Scroller_Product_Container">
-                        <div class="New_Releases_Scroller_Product_Photo">
-                            <img src="img/bodily_boots.png" alt="">
-                        </div>
-                        <div class="New_Releases_Scroller_Product_Title">
-                            <span class="Product_Name">Product name</span>
-                            <br>
-                            <span class="Product_Price">$299 USD</span>
-                        </div>
+    <main>
+        <div class="Banner_Container">
+            <div class="Banner_Content ">
+                <div class="Banner_Text_Block">
+                    <div class="Banner_Text_Block_Tittle">
+                        <span>Build for <p>flight</p></span>
                     </div>
-                    <div class="New_Releases_Scroller_Product_Container">
-                        <div class="New_Releases_Scroller_Product_Photo">
-                            <img src="img/bodily_boots.png" alt="">
-                        </div>
-                        <div class="New_Releases_Scroller_Product_Title">
-                            <span class="Product_Name">Product name</span>
-                            <br>
-                            <span class="Product_Price">$299 USD</span>
-                        </div>
-                    </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
+                    <div class="Banner_Text_Block_Text">
+                        <span>Introducing product name.<p>Our lighest shoe ever.</p></span>
                     </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
-                    </div>
-                </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
-                    </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
-                    </div>
-                </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
-                    </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
-                    </div>
-                </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
-                    </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
-                    </div>
-                </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
-                    </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
-                    </div>
-                </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
-                    </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
-                    </div>
-                </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
-                    </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
-                    </div>
-                </div><div class="New_Releases_Scroller_Product_Container">
-                    <div class="New_Releases_Scroller_Product_Photo">
-                        <img src="img/bodily_boots.png" alt="">
-                    </div>
-                    <div class="New_Releases_Scroller_Product_Title">
-                        <span class="Product_Name">Product name</span>
-                        <br>
-                        <span class="Product_Price">$299 USD</span>
+                    <div class="Banner_Text_Block_Button">
+                        <button class="Banner_Button">
+                            SHOP NOW
+                        </button>
                     </div>
                 </div>
+                <div class="Banner_Photos">
+                    <div class="Banner_Vans_Big">
+                        <img class="Vans_Photo" src="img/vans_big.png" alt="">
+                    </div>
+                    <div class="Banner_Vans_Small">
+                        <img class="Vans_Photo" src="img/vans_small.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="Preview_Container">
+            <div class="Preview_Content">
+                <div class="Preview_Women">
+                    <span class="Preview_Women_Tittle">Women</span>
+                    <a class="Preview_Women_Link" href="#"><span>Shop Now</span></a>
+                </div>
+                <div class="Preview_Men">
+                    <span class="Preview_Men_Tittle">Men</span>
+                    <a class="Preview_Men_Link" href="#"><span>Shop Now</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="Scroller_Container">
+            <div class="Scroller_Content">
+                <div class="Scroller_Title">
+                    <span>New Releases</span>
+                </div>
+                <div class="Scroller">
+                    <div class="Scroller_Product_Container">
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Scroller_Container">
+            <div class="Scroller_Content">
+                <div class="Scroller_Title_Top">
+                    <span>Top Kicks</span>
+                </div>
+                <div class="Scroller">
+                    <div class="Scroller_Product_Container">
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                        <div class="Scroller_Product_Content">
+                            <div class="Scroller_Product_Photo">
+                                <img src="img/bodily_boots.png" alt="">
+                            </div>
+                            <div class="Scroller_Product_Price">
+                                <span class="Product_Name">Product name</span>
+                                <br>
+                                <span class="Product_Price">$299 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Mailing_Container">
+            <div class="Mailing_Content">
+                <div class="Mailin_Title">
+                    <span>Never miss <p>a drop.</p></span>
+                </div>
+                <div class="Mailing_Text">
+                    <span>Receive updates about our new <p>products and promotion.</p></span>
+                </div>
+                <form class="Mailing_Submit">
+                    <input type="submit" value="JOIN MAILING LIST">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="Footer_Content">
+            <div class="Footer_Navigation">
+                <div class="Nav_Container_Top">
+                    <div class="Footer_Nav_Content">
+                        <span>MY ACCOUNT</span>
+                        <nav class="Footer_Nav">
+                            <ul>
+                                <a class="Footer_Nav_Button" href="#"><li>Sign in</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Register</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Order status</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="Footer_Nav_Content">
+                        <span>HELP</span>
+                        <nav class="Footer_Nav">
+                            <ul>
+                                <a class="Footer_Nav_Button" href="#"><li>Shipping</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Returns</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Sizing</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="Nav_Container_Bottom">
+                    <div class="Footer_Nav_Content">
+                        <span>ABOUT</span>
+                        <nav class="Footer_Nav">
+                            <ul>
+                                <a class="Footer_Nav_Button" href="#"><li>Our Story</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Media</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Sustainability</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="Footer_Nav_Content">
+                        <span>LEGAL STUFF</span>
+                        <nav class="Footer_Nav">
+                            <ul>
+                                <a class="Footer_Nav_Button" href="#"><li>Terms of use</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Terms of sales</li></a>
+                                <a class="Footer_Nav_Button" href="#"><li>Privacy policy</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="Footer_Socials">
+                <span class="Footer_Socials_Title">FOLLOW US</span>
+                <div class="Socials_Img">
+                    <a href=""><img src="img/FB.png" alt=""></a>
+                    <a href=""><img src="img/Insta.png" alt=""></a>
+                    <a href=""><img src="img/Twitter.png" alt=""></a>
+                    <a href=""><img src="img/Linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="Footer_Rights_Text">
+            <span>2020 Shoppy Inc. All Right Reserved</span>
+        </div>
+    </footer>
 </body>
 </html>
